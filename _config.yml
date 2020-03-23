@@ -1,0 +1,94 @@
+title: Rust Examples
+tagline: "Because we don't have all day."
+description: "Usable Rust programming examples, because we don't have all day."
+url: "https://rust-examples.com"
+#twitter:
+#  username:
+#  card:
+logo: /images/favicon.png
+social:
+  links:
+    - https://github.com/rust-examples/rust-examples.com
+#    - https://twitter.com/Something
+#webmaster_verifications:
+#  google: 1234
+#  bing: 1234
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+google_analytics_key: UA-161576879-1
+disqus_shortname: rust-examples
+#newsletter_action: maybe later
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: rust
+
+feed:
+  excerpt_only: true
+
+remote_theme: "CloudCannon/base-jekyll-template"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-extract-element
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-archives
+
+sass:
+    style: compressed
+
+collections:
+  sets:
+
+jekyll-archives:
+  enabled: ['categories']
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      author: Rust Examples
+  -
+    scope:
+      type: "sets"
+    values:
+      _hide_content: true
+  -
+    scope:
+      path: "index.html"
+    values:
+      body_class: "show_hero_search"
+
+# -----------
+# CloudCannon
+
+#social_icons:
+#  - Facebook
+#  - Google Plus
+#  - Instagram
+#  - LinkedIn
+#  - Pinterest
+#  - Tumblr
+#  - Twitter
+#  - YouTube
+#  - Email
+#  - RSS
+#  - GitHub
+
+types:
+  - Document
+  - Video
+
+#_comments:
