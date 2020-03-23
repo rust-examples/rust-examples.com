@@ -6,6 +6,8 @@ gem "jekyll", "~> 3.8"
 gem "jekyll-remote-theme", "~> 0.4.2"
 gem "jekyll-seo-tag"
 gem "jekyll-feed"
-gem "jekyll-extract-element"
 gem "jekyll-sitemap"
 gem "jekyll-archives"
+
+# jekyll-extract-element security update
+gem "nokogiri", ">= 1.10.8"

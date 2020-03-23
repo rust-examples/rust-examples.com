@@ -32,7 +32,6 @@ remote_theme: "CloudCannon/base-jekyll-template"
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-extract-element
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
