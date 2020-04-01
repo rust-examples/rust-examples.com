@@ -5,7 +5,7 @@ url: "https://rust-examples.com"
 #twitter:
 #  username:
 #  card:
-logo: /images/favicon.png
+logo: /assets/images/favicon.png
 social:
   links:
     - https://github.com/rust-examples/rust-examples.com
@@ -28,7 +28,7 @@ kramdown:
 feed:
   excerpt_only: true
 
-remote_theme: "CloudCannon/base-jekyll-template"
+remote_theme: "freshautomations/base-jekyll-template"
 
 plugins:
   - jekyll-remote-theme
@@ -69,7 +69,8 @@ defaults:
       path: "index.html"
     values:
       body_class: "show_hero_search"
-
+      hero_search_title: "Rust Examples"
+      hero_search_tagline: "Because we don't have all day."
 # -----------
 # CloudCannon
 

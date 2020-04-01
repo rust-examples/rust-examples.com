@@ -7,7 +7,7 @@ tags: [basics]
 set: Modules
 set_order: 1
 ---
-[![Crates and packages](/images/crates_and_packages.png)](/images/crates_and_packages.png){:data-lightbox="lightbox"}
+[![Crates and packages](/assets/images/crates_and_packages.png)](/assets/images/crates_and_packages.png){:data-lightbox="lightbox"}
 Folder structure:
 ```text
 .

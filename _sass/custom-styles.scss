@@ -1,0 +1,57 @@
+// Lightbox for breaking out images
+@import "https://unpkg.com/lightbox2@2.11.1/dist/css/lightbox.min.css";
+// Override Lightbox images folder
+.lb-data .lb-close {
+  background: url(../images/lightbox/close.png) top right no-repeat;
+}
+.lb-cancel {
+  background: url(../images/lightbox/loading.gif) no-repeat;
+}
+.lb-nav a.lb-next {
+  background: url(../images/lightbox/next.png) right 48% no-repeat;
+}
+.lb-nav a.lb-prev {
+  background: url(../images/lightbox/prev.png) left 48% no-repeat;
+}
+
+// Slightly slimmer code blocks
+.highlight {
+  padding: 5px 10px;
+  margin: 15px;
+}
+
+// Fix indented first line in code blocks
+code {
+  padding: 1px 0;
+}
+
+// Paragraphs need more space at their bottom
+p {
+  margin: 1.75em 0 0 0;
+}
+
+// Remove sidebar
+.tutorial .sidebar {
+  display: none;
+}
+.tutorial .tutorial-content {
+  margin-left: 0;
+}
+
+// Remove logo
+.logo {
+  display: none;
+}
+
+// Remove share buttons from below posts
+.tutorial-share {
+  display: none;
+}
+// Remove modal dialog for subscribe
+#subscribe {
+  display: none;
+}
+// Remove modal dialog for sharing
+#share {
+  display: none;
+}

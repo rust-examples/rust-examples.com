@@ -8,6 +8,3 @@ gem "jekyll-seo-tag"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "jekyll-archives"
-
-# jekyll-extract-element security update
-gem "nokogiri", ">= 1.10.8"
