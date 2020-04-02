@@ -73,10 +73,9 @@ struct BiggerStruct {
     #[serde(skip)]
     internalvalue: i64,
 
-    // Let not serialize this field if it would be `null`.
+    // Let's not serialize this field if it would be `null`.
     #[serde(skip_serializing_if = "Option::is_none")]
     dontserialifnull: Option<i64>,
-
 }
 
 fn main() {
