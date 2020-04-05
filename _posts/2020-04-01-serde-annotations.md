@@ -1,6 +1,6 @@
 ---
 date: 2020-04-01
-title: How to use Serde annotations for serialization and deserialization
+title: How to use Serde annotations
 description: Rust serde annotations
 categories: [Serde]
 tags: [basics]
@@ -12,16 +12,15 @@ Create your application as described in the post [Create a simple application]({
 Add to your `Config.toml`
 ```toml
 [dependencies]
-serde = "1.0.105"
+serde = { version = "1.0.105", features = ["derive"] }
 serde_json = "1.0.50"
-serde_derive = "1.0.105"
 ```
 
 Read the comments of `BiggerStruct` to see the examples of serde annotations.
 
 Filename `src/main.rs`:
 ```
-use serde_derive::{Deserialize, Serialize};
+use serde::{Serialize, Deserialize};
 use serde_json;
 
 // A smaller struct used as a map in JSON.

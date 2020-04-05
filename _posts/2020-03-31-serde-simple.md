@@ -1,6 +1,6 @@
 ---
 date: 2020-03-31
-title: Serde simple serialization and deserialization
+title: Serde simple
 description: Rust simple serialization example
 categories: [Serde]
 tags: [basics]
@@ -13,15 +13,14 @@ Create your application as described in the post [Create a simple application]({
 Add to your `Config.toml`
 ```toml
 [dependencies]
-serde = "1.0.105"
+serde = { version = "1.0.105", features = ["derive"] }
 serde_json = "1.0.50"
-serde_derive = "1.0.105"
 ```
 
 Filename `src/main.rs`:
 ```
 use serde_json;
-use serde_derive::Deserialize;
+use serde::Deserialize;
 
 // You'll need the `Deserialize` trait on your struct so serde can deserialize it.
 #[derive(Deserialize)]
@@ -56,14 +55,14 @@ Create your application as described in the post [Create a simple application]({
 Add to your `Config.toml`
 ```toml
 [dependencies]
+serde = { version = "1.0.105", features = ["derive"] }
 serde_json = "1.0.50"
-serde_derive = "1.0.105"
 ```
 
 Filename `src/main.rs`:
 ```
 use serde_json;
-use serde_derive::Serialize;
+use serde::Serialize;
 
 // You'll need the `Serialize` trait on your struct so serde can serialize it.
 #[derive(Serialize)]
