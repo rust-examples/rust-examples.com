@@ -71,6 +71,12 @@ defaults:
       body_class: "show_hero_search"
       hero_search_title: "Rust Examples"
       hero_search_tagline: "Because we don't have all day."
+  -
+    scope:
+      path: "search.html"
+    values:
+      title: Search results
+
 # -----------
 # CloudCannon
 
